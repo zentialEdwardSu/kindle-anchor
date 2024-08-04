@@ -1,0 +1,30 @@
+{
+	"items": [
+		{
+			"name": "File Anchor",
+			"priority": -1,
+			"items": [
+				{
+					"name": "Start",
+					"priority": 1,
+					"action": "./wrapper.sh sh ./start.sh",
+					"param": ""
+				},
+                {
+                    "name": "Stop",
+                    "priority": 2,
+                    "action": "./stop.sh",
+                    "param": "",
+                    "exitmenu": false
+                },
+				{
+					"name": "Show Status",
+					"priority": 3,
+					"action": "./stat.sh",
+					"param": "",
+					"exitmenu": false
+				}
+			]
+		}
+	]
+}

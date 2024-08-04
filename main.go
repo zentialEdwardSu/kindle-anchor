@@ -1,5 +1,7 @@
 package main
 
+// Origin Author: chaishushan@gmail.com
+
 import (
 	"flag"
 	"fmt"
@@ -27,7 +29,6 @@ func init() {
 	flag.Usage = func() {
 		fmt.Fprintf(os.Stderr, "Usage of WebDAV Server\n")
 		flag.PrintDefaults()
-		// fmt.Fprintf(os.Stderr, "\nReport bugs to <chaishushan{AT}gmail.com>.\n")
 	}
 }
 func main() {

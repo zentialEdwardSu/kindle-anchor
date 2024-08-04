@@ -17,7 +17,7 @@ if [ "$(ps aux | grep '[a]nchordav-linux-arm')" ];then killall anchordav-linux-a
 
 # refresh IP display and monitor wlan status in the background
 while :; do
-    eips $col 1 "== `ifconfig wlan0 | grep 'inet addr' | awk -F '[ :]' '{print $13}'` =="
+    eips $col 1 "== `ifconfig wlan0 | grep 'inet addr' | awk -F '[ :]' '{print $13}':8080` =="
     sleep 3
     if [ 0 -eq `lipc-get-prop com.lab126.cmd wirelessEnable` ]; then
     	lipc-send-event com.lab126.hal powerButtonPressed

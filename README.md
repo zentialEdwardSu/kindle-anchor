@@ -1,6 +1,8 @@
 # kindle-anchor
 
-Kindle-anchor is a KUAL-based extension used to export local floder to LAN via WebDav protocal, which enables you to manage the file in the Kindle with your favorite WebDav Client. Server address wiil stay on the left-top of screen after staing up.
+Kindle-anchor is a KUAL-based extension used to export local floder to LAN via WebDav protocal, which enables you to manage the file in the Kindle with your favorite WebDav Client. Server address wiil stay on the left-top of screen after staing up. For the security consideration, WebDav server will listen on port `8080` instead of the typical port `80` for WebDav protocol.
+
+> In order to connect Kindle more conveniently, we recommend that you bind Kindle's MAC to IP, which avoids frequently changing the WebDav connection address.
 
 # Install
 
